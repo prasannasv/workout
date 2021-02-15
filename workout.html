@@ -4,9 +4,11 @@
     <title>Personal Workout</title>
   </head>
   <body>
-    <button id="start" onclick="startWorkout(this);">Start</button>
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <button id="start" onclick="startWorkout(this);">Start</button>
+    </div>
     <div id="workoutInfo" style="display:none">
-      <h1>Workout started</h1>
+      <h1 style="text-align: center">Workout started</h1>
       <h2 id="round" style="font-size: 6em; text-align: center"></h2>
       <h3 id="workout" style="font-size: 6em; text-align: center"></h3>
       <h3 id="timer" style="font-size: 8em; text-align: center"></h3>
