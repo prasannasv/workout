@@ -5,7 +5,7 @@
   </head>
   <body>
     <div style="display: flex; justify-content: center; align-items: center;">
-      <button id="start" onclick="startWorkout(this);">Start</button>
+      <button id="start" style="background-color: #4CAF50; border: none; font-size: 2em; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block;" onclick="startWorkout(this);">Start</button>
     </div>
     <div id="workoutInfo" style="display:none">
       <h1 style="text-align: center">Workout started</h1>
@@ -47,6 +47,7 @@
 
           var startButton = document.getElementById('start');
           startButton.innerText = 'Stop';
+          startButton.style.backgroundColor = '#f44336';
           startButton.setAttribute('onclick', 'stopWorkout();');
           document.getElementById('workoutInfo').style.display = '';
 
@@ -109,6 +110,7 @@
           document.getElementById('workoutInfo').style.display = 'none';
           var startButton = document.getElementById('start');
           startButton.innerText = 'Start';
+          startButton.style.backgroundColor = '#4CAF50';
           startButton.setAttribute('onclick', 'startWorkout();');
         };
 
